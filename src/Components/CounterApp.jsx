@@ -20,8 +20,9 @@ handleReset =()=>{
     render(){
     return(
       <>
-      <h1>Counter App Using Class Component</h1>
-      <h1>Count: {this.state.count}</h1>
+      <div className="container">
+      <h1 className="counter">Counter App Using Class Component</h1>
+      <h1 className="counter">Count: {this.state.count}</h1>
       <button 
       onClick={this.handleAdd}>+</button>
       <button
@@ -29,6 +30,7 @@ handleReset =()=>{
         -</button>
       <button
       onClick={this.handleReset}>Reset</button>
+      </div>
       </>  
     )
 }
